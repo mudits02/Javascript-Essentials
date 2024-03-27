@@ -1,0 +1,65 @@
+1. Temporal dead zone is basically the time period in which a let variable is hoisted and 
+    till it was initalized.
+
+2. Block in js basically when we are grouping multiple js statements to be used afterwards
+    its done in between of {} and its the same how we write statments under if statement.
+
+3 Let and const are in block scope that means that if they are declared in a block , then
+    they can be accessed only in that particular block and not outisde it, but the var is
+    declared globally.
+
+4. Shadowing of var -> refer prac.js for that , basically if a variable is declared outisde
+    first and then inside a block , we declare it as some other value , then the block
+    value shadows or overwrites it and it shadows it in its global scope. this is done
+    because both are pointing to the same memory location.
+
+5. Shadowing happens in let and const too but there value only changes in the block where
+    they are being re valued.
+
+6. Shadowing behaves same in a scope of function.
+
+7. Illegal Shadowing -> It means when we reassign a let declared globally through a var 
+    inside a scope , it gives an syntax error while vice versa works fine. Both let and 
+    const follow lexical scope. 
+
+    let a = 10;
+    {
+        var a = 20; //this throws error
+    }
+
+    <--------->
+    var a = 10;
+    {
+        let a = 20; //Works perfectly fine.
+    }
+
+    <------->
+    const a = 20;
+    {
+        const a = 30; 
+        console.log(a); // op-> 30
+    }
+
+    console.log(a); //op -> 20
+
+8. Var can be declared and accessed globally. Let can be declared globally, but its 
+    access is limited to the block in which it is declared. Variables declared using 
+    var can be re-declared and updated within the same scope. Variables declared with 
+    let can be updated but not re-declared within the same scope.
+
+9. A closure is the combination of a function bundled together (enclosed) with references
+    to its surrounding state (the lexical environment). In other words, a closure gives you 
+    access to an outer function's scope from an inner function.
+
+    Example in prac.js
+
+10. In example of prac.js , closure means that since we are returning function y from
+    func x , so technically , z has the function calling of only y and variable inside
+    y is just printed but the defining is done in function x, so basically , it will
+    print 10 because it remembers its lexical memeory and that is what is closure.
+    So when we call z anywhere else in the program , a is still remembered and printed
+    everytime because it remembers its lexical memory.
+
+11. Also remember, in the closure code , the output becomes 100 because the real thing being
+    printed here is the reference of a , not the value , since variables are executed in
+    global scope , we see that console.log(a) refers the a of the global scope.
