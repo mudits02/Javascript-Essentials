@@ -63,3 +63,45 @@
 11. Also remember, in the closure code , the output becomes 100 because the real thing being
     printed here is the reference of a , not the value , since variables are executed in
     global scope , we see that console.log(a) refers the a of the global scope.
+
+12. Differece between function statement and function expression is hoisiting.
+
+13. Function statement and Function declaration is the same thing.
+
+14. Anonymous function means namesless function (different from Arrow functions)
+    They throw error when delcared directly (Syntax error). They are used when we have
+    to use functions as a value (as declared in function expression example).
+
+15. Function expression is basically when we are declaring a function inside of a variable
+    but we are declaring the name of the function in the variable. It shows the output only
+    when the varibale is called and not when that function is called because in JS , that
+    function is declared in the local scope of the variable and not in the global scope.
+
+16. When we are passing value inside a function , they are called arguements, i.e.
+    we have delcared xyz(1 , 2) , so here 1 and 2 are arguements while 
+    function xyz(param1 , param2){
+
+    }
+
+    param1 and param2 are parameters.
+
+17. We can also pass a function as an arguement.
+
+18. We can return an Anonymous function from a function
+
+19. First class function means kind of ability to take functions as parameter , to pass 
+    them as an arguement or return them from the function.
+
+20. 
+
+
+
+
+
+
+
+
+
+
+
+
