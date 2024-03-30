@@ -92,7 +92,38 @@
 19. First class function means kind of ability to take functions as parameter , to pass 
     them as an arguement or return them from the function.
 
-20. 
+20. Functions are first class citizens -> ability to use functions like a value.
+
+21. Callback functions are those function swhich are called as an arguement inside of
+    a function(they are Anonymous).
+
+22. Callback function help in making the synchronous js asynchronous.
+
+23. A JavaScript callback is a function which is to be executed after another function
+    has finished execution. A more formal definition would be - Any function that is
+    passed as an argument to another function so that it can be executed in that other
+    function is called as a callback function.
+
+24. We use closure for data hiding.
+
+25. Js is synchronous and single threaded.
+
+26. Callback queue is basically a execution queue where all the callbacks are inserted
+    and the event loop checks that is there any callback in the queue and it is schduled,
+    if it finds one, it send it to the Call stack and it is executed.
+
+27. In event_loop.js ,  when we are doing addEventListener , that function waits in the 
+    Web API environment to get pressed and when pressed , it goes in the callback queue
+    and then event loop checks for it and pushes it in the call stack and its executed
+
+28. When we call the fetch() Web API , then initially it also waits for in the Web API
+    environment until called , then it is sent to MicroTask Queue for execution , which 
+    has a high priority than the Callback Queue and is executed first by the Event loop.
+
+29. All the callbacks that come through promises are send to the MicroTask Queue and
+    mutation observer too.
+
+30. 
 
 
 
