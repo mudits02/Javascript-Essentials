@@ -124,9 +124,37 @@
     mutation observer too.
 
 30. JavaScript Runtime environment -> An environment which enables to run Js on any machine
-    Browser is able to execute js code because it has Js Runtime environment.
+    Browser is able to execute js code because it has Js Runtime environment. NodeJs is also
+    server side Js environment.
 
-31. 
+31. How Js engine executes the code
+    Code -> Parsing -> Compilation -> Execution.
+
+32. For garbage collection , read mark and sweep algroithm.
+
+33. Google's V8 js engine uses "Ignition" as there interpreter and "Turbofan" as there
+    Compilation optimizer.
+
+34. A higher order function is a function which either takes a function as an input or
+    returns a function.
+
+35. https://astexplorer.net/ -> visit this for seeing the abstract syntax tree
+
+36. Map is used in js to trabsform an array , i.e. say if we want to double or triple an 
+    array , we will use map for that. 
+
+37. Filter basically does as its name , it implemetns and returns the condition to be fulfilled
+
+38. Reduce is used when we have to find a single value out of the array for example
+    finding the largest value or sum of the array.
+
+39. in reduce , we have to pass 2 parameters , a function and the initial value of the 
+    accumalator. Now that function has 2 parameters , generically called accumaltor and
+    current , in which accumaltor is the output we want to return and curr acts like
+    nums[i] , or like an iterator(acts like one).
+
+40. 
+
 
 
 
