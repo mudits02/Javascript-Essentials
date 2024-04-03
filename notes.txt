@@ -153,7 +153,36 @@
     current , in which accumaltor is the output we want to return and curr acts like
     nums[i] , or like an iterator(acts like one).
 
-40. 
+40. Callback hell is basically when we are doing multiple callbakcs inside callbacks,
+    (Spaghetti code basically)
+
+41. Inversion of control means when we are giving the control of our code to some other code
+    or API and now we have tightly coupled that code.
+
+42. Promise can be seen as an empty object with a data value like {data : ____}. Initally,
+    say after an API call , we put that in the promise and till that call is completed , 
+    we initiate an undefined value and after we the data , we reassign it with that data
+    in the object and our promise is completed and then the callback inside promise.then()
+    is executed.
+
+43. This is better than a callback because in callbacks. we are more dependant on the other
+    code or API and makes it more vulnerable to fail(Inversion of Control) , what we are
+    doing with promise is that we only execute the callback inside the promise.then() when
+    we get the data in 'promise'.
+
+44. Only 3 states of promise , pending , fulffiled and rejected.
+
+45. Promises are immutable.
+
+46. A promise is an object reperesenting the eventual completion or faliure of an
+    asynchronous operation which can also be used for futurre reference. Essentially , 
+    a promise is a returned object to which you attack a callback , instead of passiang
+    callbacks in a function.
+
+47. .catch() is used to catch the reject state of the promise , when the promise is rejected
+    we catch that using .catch().
+
+48. 
 
 
 
