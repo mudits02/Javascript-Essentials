@@ -182,8 +182,44 @@
 47. .catch() is used to catch the reject state of the promise , when the promise is rejected
     we catch that using .catch().
 
-48. 
+48. Whenever we are doing promise chaining , we always have return either a value(which is
+    to be passed in the next callback) or we return a promise instead of it.
 
+49. When we do promise .all() , it will take time for all the promises to finish , that
+    is in the case of when all promise are succesfully executed. It will give us an
+    array of outputs.
+
+50. If any promise is rejected , promise.all() will throw the same error which was thrown
+    by the promise , as soon as error occurs , it will throw. 
+
+51. The other promise which dont throw error will be completed but promise.all() on a 
+    whole will be rejected and throw an error because promises cannot be canceled in js.
+
+52. Other promises might get success but promise.all() will not wait.
+
+53. For example an intermediate promise gets rejected then also the promise.all() , gets\
+    rejected on a whole.
+
+54. promise.allSetteled([p1] , p2 , p3) -> Now this command in promise returns the exact
+    same number of values input. So this will return in both the cases. for example , p2
+    gets rejected , then output will be -> [val1 , eer2 , val3]. so , it basically waits 
+    for all the promises to settle.
+
+55. promise.race([p1 , p2 , p3]) gives the value(not array) of the first settled promise
+    settled promise doesnt mean successful promise, if the first promise returns an error
+    it will show that error. 
+
+56. promsie.any([p1 , p2 , p3]) -> it gives the value of the first resolved promise,i.e.
+    the first promise that gets successful , in the case when all get rejected , they it
+    throws an aggregated error, i.e. the combined errors of all the promises in an array
+    [err1 , err2 , err3]. Say if 1 fails , then it will ignore that and wait for the first
+    successful promise and return the value of it.
+
+57.  Promise lingo
+        1. settled -> promise has given us a result(it can be either resolved or rejected 
+        both ways).
+        2.Resolve -> success or fulffiled
+        3.Reject -> Failed or rejected.
 
 
 
