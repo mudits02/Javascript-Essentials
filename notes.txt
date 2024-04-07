@@ -221,6 +221,26 @@
         2.Resolve -> success or fulffiled
         3.Reject -> Failed or rejected.
 
+58. An async function always return a promise. For example if we dont return a promise and
+    directly return a value , then behind the scenes , this will wrap that value in a 
+    promise and return it.
+
+59. If the return value inside an async function is already a promise , then it wont wrap
+    it in a promise. It is returned as it is.
+
+60. Await keyword basically resolves the promise in the async function. It can only be used
+    inside an async function.
+
+61. So basically when we are using the await keyword , the await keyword doesnt make the 
+    main thread to be blocked or it waits , it basically suspends the execution of the function
+    till the method is resolved and then continues from the place where it left.
+    Also when we say that it suspends means since js is synchronous language , it removes
+    the function from the callstack until the promise is resolved.
+
+62. fetch() is basically a promise which when resolved gives the output in the form of
+    Response object and then we do Response.json() which again is a promise and it returns
+    the json format object
+
 
 
 
