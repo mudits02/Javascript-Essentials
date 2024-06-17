@@ -1,0 +1,1 @@
+1. **Block Scope** -> Basically when we want to write compound statements , that it when we have to write multiple statement for a loop or say if statement  , we cll that scope as block scope.
