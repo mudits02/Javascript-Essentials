@@ -1,10 +1,10 @@
 # Closures
 
-1. **Closure** -> It is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).<br>
-2. A closure is a function that remembers the variables from the place where it was created, even after that place has gone away. In other words, a closure allows a function to keep using variables from outside its own scope.<br>
-3. Example -> Imagine you have a function inside another function. The inner function can access variables from the outer function.<br>
-4. Return the Inner Function: When the outer function runs, it can return the inner function to be used later.<br>
-5. Remember the Variables: Even if the outer function has finished running and its local variables would normally be gone, the inner function (the closure) still remembers those variables.<br>
+1. **Closure** -> It is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).<br><br>
+2. A closure is a function that remembers the variables from the place where it was created, even after that place has gone away. In other words, a closure allows a function to keep using variables from outside its own scope.<br><br>
+3. Example -> Imagine you have a function inside another function. The inner function can access variables from the outer function.<br><br>
+4. Return the Inner Function: When the outer function runs, it can return the inner function to be used later.<br><br>
+5. Remember the Variables: Even if the outer function has finished running and its local variables would normally be gone, the inner function (the closure) still remembers those variables.<br><br>
 ---
 ## setTimeout (Main js file -> setTimeout_closure.js)
 1. Time , Tide and Javascript waits for none , so when we do ***setTimeout*** in in setTimeout_closure.js file , first the console.log is printed and then the value inside the **setTimeout.<br><br>
