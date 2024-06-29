@@ -12,10 +12,11 @@
 ---
 1. Parameter and Arguements are different terms <br><br>
 2. When we pass the values inside the function are called arguements and the labels and identifiers that gets those values are called parameters.
-3. Easy terms , when we define a function , the identifiers inside them are parameters, example ->``` function abc(param1 , param2){
+3. Easy terms , when we define a function , the identifiers inside them are parameters, example ->
+``` function abc(param1 , param2){
         return param1 + param2;
    } // here param1 and param2 are parameters
 
    abc(2 , 4) // 2 and 4 are arguements
-```
-4. 
+   
+4.
