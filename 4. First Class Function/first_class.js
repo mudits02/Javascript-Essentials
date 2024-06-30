@@ -28,3 +28,13 @@ var c = function xyz(){
 }
 
 // xyz(); // This will throw an error
+
+function d (param1)
+{
+    return function zyx() // this is first class function
+    {
+
+    }
+}
+
+d(b()); // FC Function
