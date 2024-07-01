@@ -31,4 +31,4 @@
 
 ![V8_Engine](https://github.com/mudits02/Javascript-Essentials/blob/master/Images/photo1719860590.jpeg)
 
-1. 
+This is a more practical design of how the JS engine works (Read about it on there docs)
