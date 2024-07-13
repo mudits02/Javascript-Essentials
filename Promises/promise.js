@@ -41,7 +41,7 @@ function createOrder(cart)
     const pr = new Promise(function(resolve , reject){
         if(!validateCard(orderId))
     {
-        const er = new Error("Rejected Promise");
+        const err = new Error("Rejected Promise");
         reject(err);
     }
 

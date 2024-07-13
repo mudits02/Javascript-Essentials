@@ -25,10 +25,19 @@
 2. If all the promises get rejected then it will give an aggregated error array.<br><br>
 3. When any first promise gets resolved , it ust returns the value of it(single output)<br><br>
 4. For example , if p2 gets resolved first , we get val2 as an output but if all promises get rejected , then we get [err1 , err2 , err3] , basically list of all the array<br><br>
+5. The error thrown when all are rejected is 
+``` 
+[AggregateError: All promises were rejected] {
+    [errors]: [ 'p1 rejected', 'p2 rejected', 'p3 rejected' ]
+}
+```
+<br><br>
+
+6. ***err.errors*** -> returns the array of the errors when all the promises get rejected and we want to access the error array
 
 ---
 
 ## Common Nomenclature in Promises
 
-
+![Promise naming](https://github.com/mudits02/Javascript-Essentials/blob/master/Images/photo1720875564.jpeg)
 
