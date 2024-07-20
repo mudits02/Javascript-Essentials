@@ -11,3 +11,12 @@ function x(){
 
 x();
 window.x();
+
+const Obj = {
+    a : 10,
+    x : function (){
+        console.log(this.a); // will print 10 
+    }
+}
+
+Obj.x();
